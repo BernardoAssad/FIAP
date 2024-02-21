@@ -1,0 +1,42 @@
+Firmware é um hardware que serve basicamente como um intermediário do 
+software ao hardware fazendo a comunicação necessária para o funcionamento.
+
+A Interface Unificada de Firmware Extensível (UEFI – Unified Extensible Firmware Interface)
+é uma especificação que define uma interface de software entre o sistema operacional
+e o firmware da plataforma. UEFI pretende substituir a interface de firmware do BIOS.
+ a prática, a maioria das imagens UEFI fornecem suporte legado para os serviços 
+do BIOS. UEFI pode suportar diagnósticos remotos e reparação de computadores,
+mesmo sem sistema operacional
+
+A UEFI é uma interface que consegue fazer o intermediário do firmware 
+com o SO
+
+Programas de aplicação = são os programas do usuário (como se fossem um aplicativo)
+Programas do Sistema = gerenciam a operação do computador (como se fosse todo o 
+processo para o app funcionar, SO, compilador, interpretador etc)
+
+Para proteção do hardware, existem instruções que só podem ser executadas pelo SO ou serem 
+executadas sob sua supervisão. As instruções que são capazes de comprometer a segurança e 
+a integridade do sistema computacional são conhecidas como instruções privilegiadas (por exemplo,
+instruções de E/S e de ativação e desativação de interrupções). Já as instruções que não oferecem 
+risco à operação correta do sistema computacional são conhecidas como instruções não-privilegiadas.
+
+Para controlar a execução das instruções privilegiadas o processador implementa um mecanismo de proteção 
+chamado modos de acesso.
+
+Existem dois modos de acesso: modo usuário e modo núcleo (modo kernel). O SO é executado no modo núcleo
+e os demais módulos de software, programas de sistema e programas de aplicação, são executados no modo 
+usuário.
+
+Quando o processador está operando no modo usuário, apenas instruções não-privilegiadas podem ser executadas,
+enquanto que no modo núcleo todas as instruções do processador podem ser executadas.
+
+A interface entre o sistema operacional e os programas de aplicação é definida pelo conjunto de instruções 
+estendidas fornecidas pelo sistema operacional. Estas instruções são conhecidas como chamadas de sistema (system calls).
+
+
+handle = manipulador 
+
+C# - quando se cria uma variável é necessário colocar a sigla do tipo 
+da variável na frente do nome. Ex: DWORD dwErro, BOOL bRetorno.
+DWORD = DOUBLE WORD
