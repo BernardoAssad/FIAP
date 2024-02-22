@@ -1,0 +1,50 @@
+Android Studio IDE para programar em Kotlin
+
+Modelos de telefone para preview, sempre melhor plugar um celular, porém, caso não for possível, utilizar um modelo Pixel
+
+SDK - Kit de desenvolvimento, no android studio existe uma caracteristica de API level, que é a forma que a Google viu para
+empacotar as versões da ferramenta.
+
+Atualmente, existem 2 paradigmas que são utilizados para programar em Kotli, o Declarativo e o Imperativo, o primeiro utiliza
+o jetpack compose que é um kit de ferramentas de desenvolvimento, e o Imperativo é o paradigma anterior que iremos utilizar 
+pois está mais consolidado no mercado.
+
+Para subir uma aplicação na Play Store não é permitido que o Package Name tenha com.example.fiap por exemplo, não é permitido 
+o example, é barrado automaticamente.
+
+Quando estamos criando o projeto, tem uma opção chamada Minimum SDK, que serve para escolher a minima versão aceitavel do 
+android. Caso escolhamos a menor, certas features não serão adicionadas, como exemplo, live face, para validação facial, 
+em suma, podemos escolher dependendo do projeto e das features que serão utilizadas.
+
+Tapume é uma nomenclatura dada quando uma aplicação tem uma atualização com uma versão nova e pede para o usuário atualizar 
+o aplicativo a fim de ter todo o app atualizado.
+
+Gradle é uma build tool, o gerenciador de dependências do Kotlin
+
+(Dependências são pacotes ou arquivos necessários para rodar em uma aplicação específica)
+
+Podemos escolher varios pacotes que conseguimos utilizar no Gradle importando na pasta Gradle em build.gradle e colocando 
+o link dela embaixo.
+
+A classe principal em Kotlin é chamada MainActivity
+
+Para declarar uma classe em Kotlin usamos
+
+class MainActivity {
+}
+
+Caso queiramos herdar algum pacote ou classe, fazemos:
+
+class MainActivity : Activity {
+}
+
+O ":" serve para herdar
+
+Uma activity é um componente fundamental no desenvolvimento Android, basicamente isso significa a tela usavel do telefone,
+onde consegue tocar, tirando a camera e os botões do sistema Android. Por exemplo, uma tela de produtos, ou uma tela de 
+catalogos, checkout são activities.
+
+Activities são empilhavéis, elas servem basicamente como camadas e uma sobrepõe a outra conforme está sendo apresentado.
+
+Suponhamos que estamos na Activity 1 e depois abrimos a Activity 2, logo após a Activity 3, e queremos voltar para a Activity
+ 2, a 3 é excluida, pois ela volta para a Activity 2 no momento anterior da Activity 3.
